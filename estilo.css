@@ -1,0 +1,17 @@
+body{
+  
+    font-family: Lobster;
+    background-color: rgb(18, 18, 18);
+   
+    font-size: 20px;
+}
+.contenedocr-statico{
+    position:static;
+    background: white;
+    
+    display: flex;
+    justify-content: center;
+    
+    padding: 10px;
+    border-radius: 20px;
+}
