@@ -1,0 +1,148 @@
+body{
+   height: 100vh;
+   margin: 0;
+    font-family: Lobster;
+    background-color: rgb(18, 18, 18);
+   
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+   
+}
+
+
+
+.sistema-solar{
+ position: relative;
+ width: 800px;
+ height: 800px;
+ margin: auto;
+ overflow: hidden;
+
+}
+.orbita{
+    border: 2px dashed rgb(228, 220, 220)
+}
+#sol,
+.orbita,
+.orbita + div,
+.orbita + div > div{
+    position:absolute;
+}
+#sol,
+.orbita,
+.orbita + div{
+    top: 50%;
+    left: 50%;
+}
+.orbita + div > div{
+    top: 0;
+    left: 50%;
+}
+.orbita,
+.orbita + div div,
+#tierra {
+    border-radius:50%;
+}
+#tierra{
+    height: 50px;
+    width:50px;
+}
+#sol {
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    box-shadow: 0 0 84px orange;
+    margin-top: -75px;
+    margin-left: -75px;
+    border-radius:50%;
+}
+#tierra{
+    position:absolute;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 0 34px blue;
+    top:0;
+    left:50%;
+    margin-left: -25px;
+    margin-top:-25px;
+    border-radius: 50%;
+}
+.tierra-orbita,
+.tierra-spin {
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+}
+.orbita-luna,
+.luna-spin{
+    margin-top: -45px;
+    margin-left: -45px;
+}
+#luna {
+    height: 12px;
+    width: 12px;
+    background: white;
+    margin-top: -6px;
+    margin-left: -6px;
+    border-radius: 50%;
+
+}
+.orbita-luna,
+.luna-spin{
+    height: 90px;
+    width: 90px;
+}
+#mercurio {
+    height: 25px;
+    width: 25px;
+    background-color: brown;
+    margin-top: -14px;
+    margin-top: -14px;
+}
+.orbita-mercurio,
+.mercurio-spin{
+    height: 280px;
+    width: 280px;
+    margin-left: -140px;
+    margin-top: -140px;
+}
+#venus {
+    height: 35px;
+    width: 35px;
+    background-color: rgb(36, 175, 229);
+    margin-top: -15px;
+    margin-top: -15px;
+}
+.orbita-venus,
+.venus-spin{
+    height: 370px;
+    width: 370px;
+    margin-left: -185px;
+    margin-top: -185px;
+}
+@keyframes spin-right{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.tierra-spin,
+.luna-spin,
+.venus-spin,
+.mercurio-spin{
+    --delay: 5s;
+    animation: spin-right var(--delay)linear infinite;
+}
+.tierra-spin{
+    --delay: 36.5s;
+}
+.luna-spin{
+    --delay: 3s;
+}
+.venus-spin{
+    --delay:27s;
+}
+.mercurio-spin{
+    --delay:68.7s;
+}
