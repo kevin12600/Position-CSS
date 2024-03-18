@@ -3,7 +3,6 @@ body{
    margin: 0;
     font-family: Lobster;
     background-color: rgb(18, 18, 18);
-   
     font-size: 20px;
     display: grid;
     place-items: center;
@@ -57,7 +56,7 @@ body{
     margin-left: -75px;
     border-radius:50%;
 }
-#tierra{
+#tierra {
     position:absolute;
     height: 50px;
     width: 50px;
@@ -76,7 +75,7 @@ body{
     margin-top: -250px;
 }
 .orbita-luna,
-.luna-spin{
+.luna-spin {
     margin-top: -45px;
     margin-left: -45px;
 }
@@ -102,7 +101,7 @@ body{
     margin-top: -14px;
 }
 .orbita-mercurio,
-.mercurio-spin{
+.mercurio-spin {
     height: 280px;
     width: 280px;
     margin-left: -140px;
@@ -146,3 +145,13 @@ body{
 .mercurio-spin{
     --delay:68.7s;
 }
+
+.static{
+    position: fixed;
+    background: white;
+    width: 550px;
+    display: flex;
+    justify-content:center;
+    
+    padding: 10px;
+    border-radius: 22px;}
